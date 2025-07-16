@@ -1,0 +1,16 @@
+header,
+footer {
+  background-color: darkgray;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+}
+a {
+  background-color: darkgray;
+  text-decoration-color: darkgray;
+  margin: 5px;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+}
