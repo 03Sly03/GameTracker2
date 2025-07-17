@@ -14,4 +14,4 @@
 git push
 ```
 
-Envoi sur la branche sur laquelle on travaille.
+Envoi sur la branche distante sur laquelle on travaille.
