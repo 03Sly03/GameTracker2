@@ -2,9 +2,7 @@
 
 ## ✅ Prérequis
 
-- README-gitInit -> fait
 - README-gitCommit -> fait
-- README-gitLinkRemote -> fait
 
 ## Étapes
 
