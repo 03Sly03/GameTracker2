@@ -78,33 +78,30 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   text-align: center;
   padding: 1rem;
-  position: relative;
-  z-index: 1;
+  gap: 2rem;
 }
 
-h1 {
+.section-vide {
+  justify-content: flex-start;
+}
+
+.section-vide h1 {
   font-size: 1.25rem;
   color: #40e0d0;
-  margin-top: 0.5rem;
+  margin-bottom: 4rem;
   font-weight: bold;
 }
 
 p {
-  position: absolute;
-  top: 28%; /* Ajustez cette valeur pour positionner précisément */
-  transform: translateY(-50%);
   width: 100%;
-  margin: 0;
+  margin-bottom: 4rem;
   font-size: 1.12rem;
 }
 
-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centre parfaitement */
+.section-vide button {
   background-color: #40e0d0;
   color: #000;
   border: none;
@@ -160,17 +157,74 @@ footer {
     text-decoration: underline;
   }
 
-  h1 {
+  .section-vide h1 {
     font-size: 1.5rem;
     font-weight: bold;
   }
 
-  p {
+  .section-vide p {
     font-size: 1.25rem;
   }
 
-  button {
+  .section-vide button {
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
   }
+}
+/*si guilde existe*/
+.guilde-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.guilde-nom {
+  color: #40e0d0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.guilde-blason {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  border: 3px solid #40e0d0;
+  margin-bottom: 1.5rem;
+}
+
+.guilde-infos {
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 600px;
+  color: black;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.guilde-infos p {
+  position: static !important;
+  transform: none !important;
+  width: auto !important;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.btn-supprimer {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-supprimer:hover {
+  background-color: #cc0000;
 }

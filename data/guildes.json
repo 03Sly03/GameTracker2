@@ -1,0 +1,9 @@
+[
+  {
+    "nom": "Les aventuriers",
+    "blason": "../Assets/images/aventuriers.png",
+    "description": "Guilde chill pour joueurs du dimanche",
+    "objectif": "On sait pas mais on y va",
+    "style": "deter"
+  }
+]
