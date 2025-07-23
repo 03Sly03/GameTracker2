@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+
+.titre{
+    color: #fff;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+img{
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#Description{
+    background-color: #fff;
+    margin: 0 auto;
+    width: 25%;
+    border-radius: 3%;
+    padding-left: 0.2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.1rem;
+    font-size: 1.2rem;
+
+}
+
+ul{
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    margin-left: -0.6rem;
+
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: "Roboto", sans-serif;
+
+}
