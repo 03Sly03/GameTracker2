@@ -1,16 +1,39 @@
-header,
-footer {
-  background-color: darkgray;
-  padding: 20px;
-  border-radius: 20px 20px 0px 0px;
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
   color: white;
+  margin: 0;
+  padding: 30px;
 }
-a {
-  background-color: darkgray;
-  text-decoration-color: darkgray;
-  margin: 5px;
-  color: white;
+
+h4 {
+  text-align: center;
+  color: aqua;
+  margin-top: 40px;
 }
-a:hover {
-  text-decoration: underline;
+
+.encadrement {
+  border: 2px solid #40e0d0;
+  background-color: white;
+  color: black;
+  padding: 20px 40px;
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 0px #40e0d0;
+}
+
+.encadrement p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.encadrement ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.encadrement li {
+  margin-bottom: 8px;
 }
