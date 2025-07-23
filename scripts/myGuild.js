@@ -20,8 +20,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       section.innerHTML = `
         <h1>Ma Guilde</h1>
         <p>Vous n'avez pas encore de guilde</p>
-        <a href="creeruneguilde.html"><button>Créer ma guilde</button></a>
+        <button id="creerGuildeBtn">Créer ma guilde</button>
       `;
+      const creerBtn = document.getElementById("creerGuildeBtn");
+      if (creerBtn) {
+        creerBtn.addEventListener("click", () => {
+          window.location.href = "creeruneguilde.html";
+        });
+      }
     } else {
       const guilde = guildes[guildes.length - 1];
       section.className = ""; // Réinitialise la classe
@@ -38,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p><strong>Objectif :</strong> ${guilde.objectif}</p>
             <p><strong>Style :</strong> ${guilde.style}</p>
           </div>
-          <button class="btn-supprimer" id="btnSupprimer">Supprimer la guilde</button>
+          <button onclick="window.location.href='creeruneguilde.html'">Créer ma guilde</button>
         </div>
       `;
 
