@@ -1,16 +1,141 @@
-header,
-footer {
-  background-color: darkgray;
-  padding: 20px;
-  border-radius: 20px 20px 0px 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000000;
   color: white;
 }
+
+
+p {
+  margin: 1rem 0;
+  color: #000;
+}
+
+header {
+  background-color: #40e0d0;
+  color: white;
+  padding: 1rem;
+  
+}
+
+main {
+  flex: 1; /*prend tout l'espace entre header et footer*/
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #40e0d0;;
+}
+
+li {
+  list-style-type: none;
+  margin: 0.5rem 0;
+  color: #000;
+}
+
 a {
-  background-color: darkgray;
-  text-decoration-color: darkgray;
   margin: 5px;
   color: white;
 }
 a:hover {
   text-decoration: underline;
+}
+
+.navbar a.active {
+  background-color: #727070;
+  color: white;
+  border-radius: 4px;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a.active {
+  background-color: #727070;
+  color: white;
+  border-radius: 4px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border: 1px solid #40e0d0;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  /* padding: 0 50px 50px; */
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.form-container {
+  display: flex;
+  /* flex-direction: column; */
+  /* gap: 3rem; */
+  padding: 3rem;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+}
+
+@media (min-width: 600px) {
+  .form-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .form-group textarea {
+    width: 100%;
+  }
 }
