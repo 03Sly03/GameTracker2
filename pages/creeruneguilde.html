@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/creeruneguilde.css" />
+  <title>Créer ma guilde</title>
+</head>
+
+<body>
+  <header>
+    <nav class="desktop-nav">
+      <a href="index.html">Accueil</a>
+      <a href="creeruneguilde.html">Créer une guilde</a>
+      <a href="voirmaguildeexistepas.html">Voir ma guilde</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">A propos</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Créer ma Guilde</h1>
+
+    <form id="formGuilde">
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+
+      <div class="form-group">
+        <label for="blason">Blason (URL de l'image)</label>
+        <input type="url" id="blason" name="blason">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="objectif">Objectif</label>
+        <input type="text" id="objectif" name="objectif" required>
+      </div>
+
+      <div class="form-group">
+        <label for="style">Style</label>
+        <input type="text" id="style" name="style" required>
+      </div>
+
+      <button type="submit">Créer</button>
+    </form>
+  </section>
+
+  <footer>
+    <h6>© 2025 Guild App - Tous droits réservés</h6>
+  </footer>
+
+  <script src="../scripts/navbar.js"></script>
+  <script src="../scripts/creeruneguilde.js"></script>
+</body>
+
+</html>
