@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             <p><strong>Objectif :</strong> ${guilde.objectif}</p>
             <p><strong>Style :</strong> ${guilde.style}</p>
           </div>
-          <button onclick="window.location.href='creeruneguilde.html'">Créer ma guilde</button>
+          <button id="btnSupprimer" class="btn-supprimer">Supprimer ma guilde</button>
         </div>
       `;
 
