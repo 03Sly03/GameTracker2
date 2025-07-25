@@ -1,13 +1,15 @@
-alert ("fichier lié");
+alert("fichier lié");
+
 document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.querySelector('.btnEnvoyer');
+  const btn = document.querySelector('#btnEnvoyer');
+  
   if (btn) {
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (event) {
+      event.preventDefault(); // Empêche le comportement par défaut du bouton
       alert("Votre message a bien été envoyé !");
-      window.location.href = "http://localhost:52330/pages/index.html"; // ou ton URL
+      window.location.href = "index.html"; 
     });
+  } else {
+    console.warn("⚠️ Le message n'a pas été envoyé.");
   }
 });
-
-
-console.log("Contact.js loaded successfully");
