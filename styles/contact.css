@@ -26,11 +26,6 @@ header {
   gap: 2rem;
 }
 
-/* .navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-} */
  nav a {
   color: #000;
   text-decoration: none;
@@ -116,7 +111,7 @@ footer {
   padding: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .form-container {
     flex-direction: row;
     flex-wrap: wrap;
