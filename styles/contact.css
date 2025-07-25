@@ -26,14 +26,14 @@ header {
   gap: 2rem;
 }
 
- nav a {
+ a {
   color: #000;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
 }
 
-.navbar a.active {
+a.active {
   background-color: #727070;
   color: white;
   border-radius: 4px;
